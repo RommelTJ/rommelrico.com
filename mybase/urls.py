@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.views.generic import TemplateView
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -7,6 +8,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', include('myapps.launchpad.urls', namespace='launchpad')),
+    url(r'^philosophies.html', TemplateView.as_view(template_name='launchpad/philosophies.html')),
     # url(r'^mybase/', include('mybase.foo.urls')),
     url(r'^polls/', include('myapps.polls.urls', namespace="polls")),
 
