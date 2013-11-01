@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'launchpad/css/style.css' %}">
+        <title>Rommel Rico: Philosophies</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+        <link rel="stylesheet" href="{% static 'bootstrap/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'bootstrap/css/bootswatch.min.css' %}">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="{% static 'bootstrap/js/html5shiv.js' %}"></script>
+            <script src="{% static 'bootstrap/js/respond.min.js' %}"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://rommelrico.com/">Home</a></li>
+                        <li class="active"><a href="/philosophies.html">Philosophies</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Labs<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="http://blog.rommelrico.com/" class="dropdown-toggle" data-toggle="dropdown">Blog<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://blog.rommelrico.com/">Home</a></li>
+                                <li><a href="http://blog.rommelrico.com/ghost/editor/">Editor</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bookmarks<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.reddit.com/">Reddit</a></li>
+                                <li><a href="https://github.com/RommelTJ">Github</a></li>
+                                <li><a href="http://www.netflix.com/">Netflix</a></li>
+                                <li><a href="http://www.hulu.com/">Hulu</a></li>
+                                <li><a href="https://www.facebook.com/rommel.rico.50">Facebook</a></li>
+                                <li><a href="https://twitter.com/Rommel_Rico">Twitter</a></li>
+                                <li><a href="https://gmail.com/">Gmail</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Bio</a></li>
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </div><!-- /.navbar navbar-default -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header">
+                        <h1>Philosophies</h1>
+                    </div>
+                    <div class="well">
+                        <p><b>I believe</b> that simple is better than complicated.</p>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Made by <a href="http://rommelrico.com">Rommel Rico</a>. Contact him at <a href="mailto:me@rommelrico.com">me@rommelrico.com</a>.</p>
+                        <p>All content licenced under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/ie/">Creative Commons</a>. Code under <a href="http://opensource.org/licenses/MIT">MIT Licence</a>.</p>
+                    </div>
+                </div>
+            </footer>
+        </div><!-- /.container -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="{% static 'bootstrap/js/jquery.js' %}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>
+
